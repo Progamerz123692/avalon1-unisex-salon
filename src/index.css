@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  
+  --color-gold-50: #fbf8f1;
+  --color-gold-100: #f5eedb;
+  --color-gold-200: #ebd8ab;
+  --color-gold-300: #dfbd79;
+  --color-gold-400: #d4a34f;
+  --color-gold-500: #c58636;
+  --color-gold-600: #ab6a2a;
+  --color-gold-700: #8a5124;
+  --color-gold-800: #714223;
+  --color-gold-900: #5f3820;
+  --color-gold-950: #361c0f;
+
+  --color-salon-black: #0a0a0a;
+  --color-salon-beige: #f8f4f0;
+}
+
+@layer base {
+  body {
+    @apply bg-salon-black text-white selection:bg-gold-400/30 font-sans;
+  }
+}
+
+.glass-card {
+  @apply bg-white/5 backdrop-blur-md border border-white/10;
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #d4af37 0%, #f9f295 50%, #d4af37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-padding {
+  @apply py-20 px-6 md:px-12 lg:px-24;
+}

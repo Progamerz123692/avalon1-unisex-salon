@@ -1,0 +1,8 @@
+{
+  "name": "Avalon Unisex Salon",
+  "description": "Premium luxury unisex salon in Chandigarh offering high-end beauty and wellness services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
